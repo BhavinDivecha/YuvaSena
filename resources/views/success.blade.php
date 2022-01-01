@@ -67,7 +67,9 @@
             </td>
             
             <td>
-              {{$student->taluka->center_name}}
+              @if(isset($student) && isset($student->taluka) isset($student->taluka->center_name))
+                {{$student->taluka->center_name}}
+              @endif
             </td>
           </tr>
           <tr>
@@ -76,7 +78,9 @@
             </td>
             
             <td>
-              {{$student->taluka->center_code}}
+              @if(isset($student) && isset($student->taluka) isset($student->taluka->center_code))
+                {{$student->taluka->center_code}}
+              @endif
             </td>
           </tr>
           <tr>

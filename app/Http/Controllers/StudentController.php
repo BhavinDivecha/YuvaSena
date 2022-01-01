@@ -64,9 +64,10 @@ class StudentController extends Controller
             'phone_no' => 'required|min:10|unique:students',
             'email' => 'required|email|max:255|unique:students',
         ]);
-        $district = District::find($request->district_id);
-        $latestdistrict = District::orderBy('created_at','DESC')->first();
-        $hall_ticket_number = $district->prefix.str_pad($latestdistrict->id + 1, 4, "0", STR_PAD_LEFT);
+        // $district = District::find($request->district_id);
+        // $latestdistrict = District::orderBy('created_at','DESC')->first();
+        // $hall_ticket_number = $district->prefix.str_pad($latestdistrict->id + 1, 4, "0", STR_PAD_LEFT);
+        $hall_ticket_number = "001";
         $data = $request->except('_token');
         $data['hall_ticket_number'] = $hall_ticket_number;
         $data['address'] = $data['address_line_1'] ." ".$data['address_line_2'];

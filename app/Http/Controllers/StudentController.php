@@ -71,8 +71,8 @@ class StudentController extends Controller
         $data['hall_ticket_number'] = $hall_ticket_number;
         $data['address'] = $data['address_line_1'] ." ".$data['address_line_2'];
         
-        Student::create($data);
-        return redirect('success');
+        $student = Student::create($data);
+        return redirect('success/'.$student['id']);
     }
 
     /**

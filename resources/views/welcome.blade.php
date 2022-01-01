@@ -48,7 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <br><br>
-                    <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#why">Why?</a></li>
                     <br>

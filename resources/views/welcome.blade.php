@@ -48,6 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <br><br>
+                    <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#why">Why?</a></li>
                     <br>
@@ -59,7 +60,7 @@
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead">
+    <header class="masthead" id="home">
       <div class="container position-relative">
         <div class="row justify-content-center">
           <div class="col-xl-12">

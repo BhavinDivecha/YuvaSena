@@ -36,7 +36,14 @@
       </div>
     </nav>
     <div class="container mt-5">
-      
+    <div class="d-flex w-100 align-items-center justify-content-center">
+        <img
+          src="/assets/img/undraw_done_re_oak4.svg"
+          alt="registered"
+          height="300"
+          class="mb-5"
+        />
+      </div>
       <table class="table table-bordered">
         <!-- <thead>
           <th>
@@ -47,6 +54,11 @@
           </th>
         </thead> -->
         <tbody>
+          <tr>
+            <td colspan="2" class="text-success">
+              You are successfully registered. Center shall be communicated shortly.
+            </td>
+          </tr>
           <tr>
             <td colspan="2" class="text-success">
               Hall Ticket Details

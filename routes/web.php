@@ -14,7 +14,9 @@
 
 
 
-
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('success/{id}','StudentController@hallTicket');
 Route::get('student-register','StudentController@create');
@@ -35,8 +37,6 @@ Route::group(['middleware' => ['web','auth']], function () {
     Route::get('/admin', function () {
         return view('welcome');
     });
-    Route::get('/', function () {
-        return view('welcome');
-    });
+    
 });
 

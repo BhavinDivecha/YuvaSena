@@ -17,17 +17,17 @@ class CreateStudentsTable extends Migration
             $table->bigIncrements('id');
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('school_name');
-            $table->integer('district_id');
-            $table->integer('vidhansabha_id');
-            $table->integer('taluka_id');
+            $table->string('school_name')->nullable();
+            $table->integer('district_id')->nullable();
+            $table->integer('vidhansabha_id')->nullable();
+            $table->integer('taluka_id')->nullable();
             $table->string('phone_no');
             $table->string('email');
-            $table->text('address');
-            $table->string('pincode');
-            $table->string('dob');
-            $table->string('gender');
-            $table->string('hall_ticket_number');
+            $table->text('address')->nullable();
+            $table->string('pincode')->nullable();
+            $table->string('dob')->nullable();
+            $table->string('gender')->nullable();
+            $table->string('hall_ticket_number')->nullable();
             $table->timestamps();
         });
     }

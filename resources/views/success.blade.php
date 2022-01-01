@@ -69,6 +69,8 @@
             <td>
               @if(isset($student) && isset($student->taluka) && isset($student->taluka->center_name))
                 {{$student->taluka->center_name}}
+              @else
+                NA
               @endif
             </td>
           </tr>
@@ -80,6 +82,8 @@
             <td>
               @if(isset($student) && isset($student->taluka) && isset($student->taluka->center_code))
                 {{$student->taluka->center_code}}
+              @else
+                NA
               @endif
             </td>
           </tr>

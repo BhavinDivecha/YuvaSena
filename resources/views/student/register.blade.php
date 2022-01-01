@@ -36,7 +36,7 @@
           <img src="assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
         <div class="flex">
-          <a class="btn btn-outline-primary me-1" href="/login">Login</a>
+          <!-- <a class="btn btn-outline-primary me-1" href="/login">Login</a> -->
         </div>
       </div>
     </nav>

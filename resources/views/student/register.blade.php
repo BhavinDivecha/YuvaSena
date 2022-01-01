@@ -68,7 +68,7 @@
                         class="form-control"
                         placeholder="Jhon"
                         name="first_name"
-                        required
+                        
                       />
                       <label for="firstName">First Name</label>
                     </div>
@@ -81,7 +81,7 @@
                         id="lastName"
                         name="last_name"
                         placeholder="Doe"
-                        required
+                        
                       />
                       <label for="lastName">Last Name</label>
                     </div>
@@ -96,7 +96,7 @@
                         class="form-control"
                         placeholder="Jhon"
                         name="phone_no"
-                        required
+                        
                       />
                       <label for="phone_no">Phone Number</label>
                     </div>
@@ -109,14 +109,14 @@
                         id="email"
                         placeholder="Doe"
                         name="email"
-                        required
+                        
                       />
                       <label for="email">Email</label>
                     </div>
                   </div>
                 </div>
                 <div class="form-floating mb-3">
-                <input name="dob" class="form-control datepicker" required>
+                <input name="dob" class="form-control datepicker" >
                 <label for="dob">Date Of Birth</label>
                 </div>
                 <div class="form-floating mb-3">
@@ -125,14 +125,14 @@
                     class="form-control"
                     id="schoolName"
                     placeholder="School Name"
-                    required
+                    
                   />
                   <label for="schoolName">School Name</label>
                 </div>
                 <div class="mb-3">
                   <label for="disctric" class="form-label">Select Disctric</label>
 
-                  <select name="district_id" id="district_id" class="form-control selectpicker" required>
+                  <select name="district_id" id="district_id" class="form-control selectpicker" >
                       <option value="">Select</option>
                       @foreach($districts as $key => $value)
                       <option value="{{$key}}">{{$value}}</option>
@@ -144,7 +144,7 @@
                     >Select Vidhansabha</label
                   >
 
-                  <select name="vidhansabha_id" id="vidhansabha_id" class="form-control selectpicker" required>
+                  <select name="vidhansabha_id" id="vidhansabha_id" class="form-control selectpicker" >
                       <option value="">Select</option>
                       @foreach($vidhansabha as $key => $value)
                       <option value="{{$key}}">{{$value}}</option>
@@ -154,7 +154,7 @@
                 <div class="mb-3">
                   <label for="taluka" class="form-label">Select Taluka</label>
 
-                  <select name="taluka_id" id="taluka_id" class="form-control selectpicker" required>
+                  <select name="taluka_id" id="taluka_id" class="form-control selectpicker" >
                       <option value="">Select</option>
                       @foreach($taluka as $key => $value)
                       <option value="{{$key}}">{{$value}}</option>
@@ -169,7 +169,7 @@
                     id="addressLine1"
                     placeholder="Address Line 1"
                     name="address_line_1"
-                    required
+                    
                   />
                   <label for="addressLine1">Address Line 1</label>
                 </div>
@@ -190,7 +190,7 @@
                     id="pincode"
                     placeholder="Pincode"
                     name="pincode"
-                    required
+                    
                   />
                   <label for="addressLine2">Pincode</label>
                 </div>
@@ -198,7 +198,7 @@
                 <div class="mb-3">
                   <label for="taluka" class="form-label">Gender</label>
 
-                  <select name="gender" id="gender" class="form-control selectpicker" required>
+                  <select name="gender" id="gender" class="form-control selectpicker" >
                       <option value="">Select</option>
                       <option value="male">Male</option>
                       <option value="female">Female</option>

@@ -148,7 +148,7 @@
                   </div>
                 </div>
                 <div class="form-floating mb-3">
-                <input type="text" name="dob" class="form-control"
+                <input type="date" name="dob" class="form-control"
                 required >
                 <label for="dob">Date Of Birth</label>
                 </div>

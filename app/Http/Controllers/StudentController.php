@@ -169,7 +169,10 @@ class StudentController extends Controller
           array('id' => '2','name' => 'District 2','prefix' => 'DB','created_at' => NULL,'updated_at' => NULL)
         );
 
+        District::truncate();
+
         foreach ($district as $key => $value) {
+            
             District::create($value);
         }
 
@@ -179,6 +182,7 @@ class StudentController extends Controller
           array('id' => '2','name' => 'Taluka 2','center_name' => 'Center 2','center_code' => '002','created_at' => NULL,'updated_at' => NULL)
         );
 
+        Taluka::truncate();
         foreach ($taluka as $key => $value) {
             Taluka::create($value);
         }
@@ -188,6 +192,7 @@ class StudentController extends Controller
           array('id' => '2','name' => 'Admin','email' => 'admin@admin.com','email_verified_at' => NULL,'password' => '$2y$10$oJ1FDR3rrTDHoeFh6/IHJ.fFf1u7WD9I0t5RjDemv47H8/h47kRTi','remember_token' => NULL,'created_at' => '2021-12-30 10:37:17','updated_at' => '2021-12-30 10:37:17')
         );
 
+        User::truncate();
         foreach ($users as $key => $value) {
             User::create($value);
         }
@@ -198,6 +203,7 @@ class StudentController extends Controller
           array('id' => '2','name' => 'Vidhansabha 2','created_at' => NULL,'updated_at' => NULL)
         );
 
+        Vidhansabha::truncate();
         foreach ($vidhansabha as $key => $value) {
             Vidhansabha::create($value);
         }

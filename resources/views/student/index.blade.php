@@ -4,8 +4,8 @@
 @section('subtitle') Students @endsection
 
 @section('page-level-css')
-    <link href="{{ URL::asset('template/assets/global/plugins/datatables/datatables.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ URL::asset('template/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css') }}" rel="stylesheet" type="text/css" />
+    <link href="/template/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="/template/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
 @endsection
 
 @section('content')
@@ -54,9 +54,9 @@
 @endsection
 
 @section('page-level-plugins-js')
-    <script src="{{ URL::asset('template/assets/global/scripts/datatable.js') }}" type="text/javascript"></script>
-    <script src="{{ URL::asset('template/assets/global/plugins/datatables/datatables.min.js') }}" type="text/javascript"></script>
-    <script src="{{ URL::asset('template/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js') }}" type="text/javascript"></script>
+    <script src="/template/assets/global/scripts/datatable.js" type="text/javascript"></script>
+    <script src="/template/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+    <script src="/template/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
 @endsection
 
 @section('page-level-scripts-js')
@@ -71,7 +71,7 @@
 
                 ajax: {
 
-                    url: '{{ url('admin/students') }}',
+                    url: '{{ url('admin/students',
                     method: 'GET'
                 },
                 columns: [

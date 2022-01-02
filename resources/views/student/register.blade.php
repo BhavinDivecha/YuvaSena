@@ -204,7 +204,28 @@
                       <option value="female">Female</option>
                   </select>
                 </div>
-
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="pass-word"
+                    placeholder="Password"
+                    name="Password"
+                    
+                  />
+                  <label for="addressLine2">Password</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cnf-pass-word"
+                    placeholder="Confirm Password"
+                    name="cnf-Password"
+                    
+                  />
+                  <label for="addressLine2">Confirm Password</label>
+                </div>
                 <div class="d-grid">
                   <!-- Delete this <a> when connecting with backend -->
                   <button

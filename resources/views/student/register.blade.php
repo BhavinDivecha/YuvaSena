@@ -142,12 +142,12 @@
                   </div>
                 </div>
                 <div class="form-floating mb-3">
-                <input name="dob" class="form-control" >
+                <input type="text" name="dob" class="form-control" >
                 <label for="dob">Date Of Birth</label>
                 </div>
                 <div class="form-floating mb-3">
                   <input
-                    type="date"
+                    type="text"
                     class="form-control"
                     id="schoolName"
                     placeholder="School Name"

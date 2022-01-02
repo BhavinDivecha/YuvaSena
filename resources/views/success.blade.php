@@ -33,7 +33,9 @@
         <a class="navbar-brand" href="/">
           <img src="/assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
-        <a class="btn btn-primary w-100 mt-1 mt-md-0 ms-md-1" href="/logout">Logout</a>
+        @auth
+          <a class="btn btn-primary w-100 mt-1 mt-md-0 ms-md-1" href="/logout">Logout</a>
+        @endauth
       </div>
     </nav>
     <div class="container mt-5">

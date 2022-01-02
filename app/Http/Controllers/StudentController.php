@@ -223,7 +223,7 @@ class StudentController extends Controller
         }
     }
     public function hallTicketStudentLogin(){
-        dd(111);
+        
         if(\Auth::user()){
             $student = Student::where('email',\Auth::user()->email)->first();
             

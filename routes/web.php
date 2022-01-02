@@ -33,7 +33,7 @@ Route::get('logout', 'Auth\LoginController@logout', function () {
     return abort(404);
 });
 
-
+Route::get('/','StudentController@hallTicketStudentLogin');
 Route::group(['middleware' => ['web','auth']], function () {   	
     Route::resource('admin/students', 'StudentController');
     Route::get('/','StudentController@hallTicketStudentLogin');

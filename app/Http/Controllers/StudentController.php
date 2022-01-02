@@ -8,7 +8,7 @@ use App\Model\District;
 use App\Model\Vidhansabha;
 use App\Model\Taluka;
 use App\User;
-
+use Illuminate\Support\Facades\Hash;
 use Yajra\DataTables\DataTables;
 use PDF;
 
@@ -61,19 +61,33 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
+        $date = date('d-m-Y', strtotime($request->dob));
+        $data['dob'] = $date;
         $request->validate([
             'phone_no' => 'required|min:10|unique:students',
             'email' => 'required|email|max:255|unique:students',
+            'password' => 'required| min:4 | confirmed',
+            'password_confirmation' => 'required| min:4'
         ]);
         $district = District::find($request->district_id);
         $latestdistrict = District::orderBy('created_at','DESC')->first();
         $hall_ticket_number = $district->prefix.str_pad($latestdistrict->id + 1, 4, "0", STR_PAD_LEFT);
-        
         $data = $request->except('_token');
         $data['hall_ticket_number'] = $hall_ticket_number;
         $data['address'] = $data['address_line_1'] ." ".$data['address_line_2'];
         
         $student = Student::create($data);
+
+
+        $user = [];
+        $user['name'] = $data['first_name']." ".$data['last_name'];
+        $user['email'] = $data['email'];
+        $user['password'] = Hash::make($data['password']);
+
+        // dd($user);
+        User::create($user);
+        
+        
         return redirect('success/'.$student['id']);
     }
 
@@ -207,5 +221,11 @@ class StudentController extends Controller
         foreach ($vidhansabha as $key => $value) {
             Vidhansabha::create($value);
         }
+    }
+    public function hallTicketStudentLogin(){
+        
+        $student = Student::where('email',\Auth::user()->email)->first();
+        
+        return view('success',compact('student'));
     }
 }

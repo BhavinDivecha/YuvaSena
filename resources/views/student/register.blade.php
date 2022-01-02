@@ -115,8 +115,34 @@
                     </div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        name="password"
+                        required
+                      />
+                      <label for="password">Password</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="confirm_password"
+                        name="password_confirmation"
+                        required
+                      />
+                      <label for="password_confirmation">Confirm Password</label>
+                    </div>
+                  </div>
+                </div>
                 <div class="form-floating mb-3">
-                <input name="dob" class="form-control datepicker" >
+                <input name="dob" class="form-control" >
                 <label for="dob">Date Of Birth</label>
                 </div>
                 <div class="form-floating mb-3">
@@ -204,29 +230,7 @@
                       <option value="female">Female</option>
                   </select>
                 </div>
-                <div class="form-floating mb-3">
-                <label for="taluka" class="form-label">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="pass-word"
-                    placeholder="Password"
-                    name="Password"
-                    
-                  />
-                  <label for="addressLine2">Password</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="cnf-pass-word"
-                    placeholder="Confirm Password"
-                    name="cnf-Password"
-                    
-                  />
-                  <label for="addressLine2">Confirm Password</label>
-                </div>
+                
                 <div class="d-grid">
                   <!-- Delete this <a> when connecting with backend -->
                   <button

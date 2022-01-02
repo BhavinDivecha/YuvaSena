@@ -205,6 +205,7 @@
                   </select>
                 </div>
                 <div class="form-floating mb-3">
+                <label for="taluka" class="form-label">Password</label>
                   <input
                     type="password"
                     class="form-control"
@@ -216,6 +217,7 @@
                   <label for="addressLine2">Password</label>
                 </div>
                 <div class="form-floating mb-3">
+                <label for="taluka" class="form-label">Confirm Password</label>
                   <input
                     type="text"
                     class="form-control"

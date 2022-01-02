@@ -34,7 +34,7 @@
           <img src="/assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
         @auth
-          <a class="btn btn-primary w-100 mt-1 mt-md-0 ms-md-1" href="/logout">Logout</a>
+          <a class="btn btn-primary mt-1 mt-md-0 ms-md-1" href="/logout">Logout</a>
         @endauth
       </div>
     </nav>
@@ -57,11 +57,6 @@
           </th>
         </thead> -->
         <tbody>
-          <tr>
-            <td colspan="2" class="text-success">
-              You are successfully registered. Center shall be communicated shortly.
-            </td>
-          </tr>
           <tr>
             <td colspan="2" class="text-success">
               Hall Ticket Details

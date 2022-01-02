@@ -224,8 +224,15 @@ class StudentController extends Controller
     }
     public function hallTicketStudentLogin(){
         
-        $student = Student::where('email',\Auth::user()->email)->first();
+        if(\Auth::user()){
+
         
-        return view('success',compact('student'));
+            $student = Student::where('email',\Auth::user()->email)->first();
+            
+            return view('success',compact('student'));
+        }
+        else{
+            return view('welcome');
+        }
     }
 }

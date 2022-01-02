@@ -14,9 +14,9 @@
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('success/{id}','StudentController@hallTicket');
 Route::get('student-register','StudentController@create');

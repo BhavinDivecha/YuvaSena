@@ -24,6 +24,8 @@ Route::post('student-register','StudentController@store')->name('student-registe
 
 Route::get('student/hall-ticket/{id}','StudentController@hallTicketDownload');
 
+Route::get('import','StudentController@importData');
+
 
 Auth::routes();
 

@@ -160,4 +160,45 @@ class StudentController extends Controller
         return $pdf->download('hall_ticket.pdf');
 
     }
+
+    public function importData()
+    {
+        $district = array(
+          array('id' => '1','name' => 'District 1','prefix' => 'DA','created_at' => NULL,'updated_at' => NULL),
+          array('id' => '2','name' => 'District 2','prefix' => 'DB','created_at' => NULL,'updated_at' => NULL)
+        );
+
+        foreach ($district as $key => $value) {
+            District::create($value);
+        }
+
+
+        $taluka = array(
+          array('id' => '1','name' => 'Taluka 1','center_name' => 'Center 1','center_code' => '001','created_at' => NULL,'updated_at' => NULL),
+          array('id' => '2','name' => 'Taluka 2','center_name' => 'Center 2','center_code' => '002','created_at' => NULL,'updated_at' => NULL)
+        );
+
+        foreach ($taluka as $key => $value) {
+            Taluka::create($value);
+        }
+
+
+        $users = array(
+          array('id' => '2','name' => 'Admin','email' => 'admin@admin.com','email_verified_at' => NULL,'password' => '$2y$10$oJ1FDR3rrTDHoeFh6/IHJ.fFf1u7WD9I0t5RjDemv47H8/h47kRTi','remember_token' => NULL,'created_at' => '2021-12-30 10:37:17','updated_at' => '2021-12-30 10:37:17')
+        );
+
+        foreach ($users as $key => $value) {
+            User::create($value);
+        }
+
+        /* `mcqtest`.`vidhansabha` */
+        $vidhansabha = array(
+          array('id' => '1','name' => 'Vidhansabha 1','created_at' => NULL,'updated_at' => NULL),
+          array('id' => '2','name' => 'Vidhansabha 2','created_at' => NULL,'updated_at' => NULL)
+        );
+
+        foreach ($vidhansabha as $key => $value) {
+            Vidhansabha::create($value);
+        }
+    }
 }

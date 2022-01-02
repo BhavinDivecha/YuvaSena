@@ -7,6 +7,7 @@ use App\Model\Student;
 use App\Model\District;
 use App\Model\Vidhansabha;
 use App\Model\Taluka;
+use App\User;
 
 use Yajra\DataTables\DataTables;
 use PDF;

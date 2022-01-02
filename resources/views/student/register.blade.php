@@ -66,6 +66,7 @@
                         type="text"
                         id="firstName"
                         class="form-control"
+                        required
                         placeholder="Jhon"
                         name="first_name"
                         
@@ -78,6 +79,7 @@
                       <input
                         type="text"
                         class="form-control"
+                        required
                         id="lastName"
                         name="last_name"
                         placeholder="Doe"
@@ -94,6 +96,7 @@
                         type="text"
                         id="phone_no"
                         class="form-control"
+                        required
                         placeholder="Jhon"
                         name="phone_no"
                         
@@ -106,6 +109,7 @@
                       <input
                         type="email"
                         class="form-control"
+                        required
                         id="email"
                         placeholder="Doe"
                         name="email"
@@ -121,6 +125,7 @@
                       <input
                         type="password"
                         class="form-control"
+                        required
                         id="password"
                         name="password"
                         required
@@ -133,6 +138,7 @@
                       <input
                         type="password"
                         class="form-control"
+                        required
                         id="confirm_password"
                         name="password_confirmation"
                         required
@@ -142,13 +148,15 @@
                   </div>
                 </div>
                 <div class="form-floating mb-3">
-                <input type="text" name="dob" class="form-control" >
+                <input type="text" name="dob" class="form-control"
+                required >
                 <label for="dob">Date Of Birth</label>
                 </div>
                 <div class="form-floating mb-3">
                   <input
                     type="text"
                     class="form-control"
+                    required
                     id="schoolName"
                     placeholder="School Name"
                     
@@ -192,6 +200,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    required
                     id="addressLine1"
                     placeholder="Address Line 1"
                     name="address_line_1"
@@ -203,6 +212,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    required
                     id="addressLine2"
                     placeholder="Address Line 2"
                     name="address_line_2"
@@ -213,6 +223,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    required
                     id="pincode"
                     placeholder="Pincode"
                     name="pincode"

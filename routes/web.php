@@ -18,6 +18,8 @@
 //     return view('welcome');
 // });
 
+Route::get('/','StudentController@hallTicketStudentLogin');
+
 Route::get('success/{id}','StudentController@hallTicket');
 Route::get('student-register','StudentController@create');
 Route::post('student-register','StudentController@store')->name('student-register');
@@ -33,7 +35,7 @@ Route::get('logout', 'Auth\LoginController@logout', function () {
     return abort(404);
 });
 
-Route::get('/','StudentController@hallTicketStudentLogin');
+
 Route::group(['middleware' => ['web','auth']], function () {   	
     Route::resource('admin/students', 'StudentController');
     Route::get('/','StudentController@hallTicketStudentLogin');

@@ -121,7 +121,7 @@
                 </div>
                 <div class="form-floating mb-3">
                   <input
-                    type="text"
+                    type="date"
                     class="form-control"
                     id="schoolName"
                     placeholder="School Name"

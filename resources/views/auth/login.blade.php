@@ -38,15 +38,26 @@
 <!-- END HEAD -->
 
 <body class=" login">
-<!-- BEGIN LOGO -->
-<div class="logo">
-    <a href="{{ URL('/') }}">
-        
-    </a>
-</div>
-<!-- END LOGO -->
-<!-- BEGIN LOGIN -->
-<div class="content">
+<!-- Navigation-->
+<nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/assets/img/yuva-sena-logo.png" alt="" height="50" />
+        </a>
+        <div class="flex">
+          <!-- <a class="btn btn-outline-primary me-1" href="/login">Login</a> -->
+          <a class="btn btn-primary" href="/student-register">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card rounded-3 my-5">
+            <div class="card-body p-4 p-sm-5">
+              <h5 class="card-title text-center mb-5 fw-light fs-5">
+                Login
+              </h5>
     <!-- BEGIN LOGIN FORM -->
     <form class="login-form" action="{{ url('/login') }}" method="post" role="form">
         {{ csrf_field() }}
@@ -61,8 +72,17 @@
         <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
             <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
             <label for="email" class="control-label visible-ie8 visible-ie9">Email</label>
-            <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" id="email" value="{{ old('email') }}" />
-
+            <input class="form-control form-control-solid placeholder-no-fix" type="text"  placeholder="Email" name="email" id="email" value="{{ old('email') }}" />
+            <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    value="{{ old('email') }}"
+                    autocomplete="off"
+                    placeholder="Email"
+                    name="email"
+                    required
+                  />
             @if ($errors->has('email'))
                 <span class="help-block">
                     <strong>{{ $errors->first('email') }}</strong>
@@ -97,8 +117,12 @@
             </div>
         </div>
     </form>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- END LOGIN FORM -->
-</div>
 <div class="copyright hide"> <script>document.write(new Date().getFullYear())</script> © Lazy Bone Publications.</div>
 <!-- END LOGIN -->
 <!--[if lt IE 9]>

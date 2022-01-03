@@ -37,7 +37,7 @@
     
 <!-- END HEAD -->
 
-<body class=" login">
+<body>
 <!-- Navigation-->
 <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
@@ -72,7 +72,6 @@
         <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
             <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
             <label for="email" class="control-label visible-ie8 visible-ie9">Email</label>
-            <input class="form-control form-control-solid placeholder-no-fix" type="text"  placeholder="Email" name="email" id="email" value="{{ old('email') }}" />
             <input
                     type="text"
                     class="form-control"

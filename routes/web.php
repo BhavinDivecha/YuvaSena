@@ -40,7 +40,7 @@ Route::group(['middleware' => ['web','auth']], function () {
     Route::resource('admin/students', 'StudentController');
     // Route::get('/','StudentController@hallTicketStudentLogin');
     Route::get('/admin', function () {
-        return view('StudentController');
+        return view('welcome');
     });
     
 });

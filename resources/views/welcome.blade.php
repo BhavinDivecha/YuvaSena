@@ -53,7 +53,7 @@
                     <li class="nav-item"><a class="nav-link" href="#why">Why?</a></li>
                     <br>
                     <br>
-                    <!-- <li class="nav-item"><a class="btn btn-outline-primary me-1 w-100" href="/login.html">Login</a></li> -->
+                    <li class="nav-item"><a class="btn btn-outline-primary me-1 w-100" href="/login">Login</a></li>
                     <li class="nav-item"><a class="btn btn-primary w-100 mt-1 mt-md-0 ms-md-1" href="/student-register">Register</a></li>
                 </ul>
             </div>

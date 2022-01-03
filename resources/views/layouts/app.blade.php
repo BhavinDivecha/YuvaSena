@@ -80,7 +80,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-default">
                             <li>
-                                <a href="{{ url('/logout">
+                                <a href="{{ url('/logout') }}">
                                     <i class="icon-key"></i> Log Out </a>
                             </li>
                         </ul>
@@ -143,7 +143,7 @@
                 <ul class="page-breadcrumb">
                     <li>
                         <i class="icon-home"></i>
-                        <a href="{{ url('/">@yield('title')</a>
+                        <a href="{{ url('/') }}">@yield('title')</a>
                     </li>
                 </ul>
             </div> -->

@@ -53,8 +53,19 @@
                     <li class="nav-item"><a class="nav-link" href="#why">Why?</a></li>
                     <br>
                     <br>
-                    <li class="nav-item"><a class="btn btn-outline-primary me-1 w-100" href="/login">Login</a></li>
+                    @if (Auth::check())
+                      //show logged in navbar
+
+                    <li class="nav-item"><a class="nav-link" href="/success">My Home</a></li>
+                    <li class="nav-item"><a class="btn btn-primary w-100 mt-1 mt-md-0 ms-md-1" href="/logout">Logout</a></li>
+                    
+                    @else
+                      //show logged out navbar
+                      <li class="nav-item"><a class="btn btn-outline-primary me-1 w-100" href="/login">Login</a></li>
                     <li class="nav-item"><a class="btn btn-primary w-100 mt-1 mt-md-0 ms-md-1" href="/student-register">Register</a></li>
+                    
+                    @endif
+                    
                 </ul>
             </div>
         </div>

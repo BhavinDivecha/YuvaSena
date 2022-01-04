@@ -126,8 +126,8 @@
             </td>
             
             <td>
-            @if(isset($student) && isset($student->date))
-                {{$student->date}}
+            @if(isset($student) && isset($student->dob))
+                {{$student->dob}}
               @else
                 NA
               @endif

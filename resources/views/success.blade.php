@@ -28,17 +28,26 @@
   </head>
   <body>
     <!-- Navigation-->
-    <nav class="navbar navbar-light bg-light static-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="/">
           <img src="/assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
-        <a class="nav-link" href="/">Home</a>
-        <a class="nav-link" href="/#about">About</a>
-        <a class="nav-link" href="/#why">Why?</a>
-        @auth
-          <a class="btn btn-primary mt-1 mt-md-0 ms-md-1" href="/logout">Logout</a>
-        @endauth
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <br><br>
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#why">Why?</a></li>
+                    <br>
+                    <br>
+                    @if (Auth::check())
+                    <li class="nav-item"><a class="btn btn-primary w-100 mt-1 mt-md-0 ms-md-1" href="/logout">Logout</a></li> 
+                    @endif
+                    
+                </ul>
+            </div>
       </div>
     </nav>
     <div class="container mt-5">

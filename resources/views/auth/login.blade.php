@@ -35,10 +35,18 @@
         <a class="navbar-brand" href="/">
           <img src="/assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
-        <div class="flex">
-          <a class="btn btn-outline-primary me-1" href="/login.html">Login</a>
-          <a class="btn btn-primary" href="/register.html">Sign Up</a>
-        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <br><br>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why">Why?</a></li>
+                    <br>
+                    <br>
+                    <li class="nav-item"><a class="btn btn-primary w-100 mt-1 mt-md-0 ms-md-1" href="/student-register">Register</a></li> 
+                </ul>
+            </div>
       </div>
     </nav>
     <div class="container">
@@ -103,17 +111,7 @@
                     Login
                   </button> -->
                 </div>
-                <div class="form-actions">
-            <div class="pull-left">
-                <label class="rememberme mt-checkbox mt-checkbox-outline">
-                    <input type="checkbox" name="remember" /> Remember me
-                    <span></span>
-                </label>
-            </div>
-            <div class="pull-right forget-password-block">
-            <a href="{{ route('password.request') }}" id="forget-password" class="forget-password">Forgot Password?</a>
-            </div>
-        </div>
+                `
               </form>
             </div>
           </div>

@@ -35,9 +35,19 @@
         <a class="navbar-brand" href="/">
           <img src="assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
-        <div class="flex">
-          <!-- <a class="btn btn-outline-primary me-1" href="/login">Login</a> -->
-        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <br><br>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why">Why?</a></li>
+                    <br>
+                    <br>
+                    <li class="nav-item"><a class="btn btn-outline-primary me-1 w-100" href="/login">Login</a></li>
+                   
+                </ul>
+            </div>
       </div>
     </nav>
     <div class="container">

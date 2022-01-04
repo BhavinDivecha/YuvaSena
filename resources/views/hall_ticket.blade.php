@@ -21,7 +21,7 @@
 
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="">
           <img src="assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
         <!-- <a class="navbar-brand" href="/">
@@ -100,7 +100,7 @@
             </td>
             
             <td>
-            @if(isset($student) && isset($student->address)))
+            @if(isset($student) && isset($student->address))
                 {{$student->address}}
               @else
                 NA
@@ -113,8 +113,8 @@
             </td>
             
             <td>
-            @if(isset($student) && isset($student->district) && isset($student->district->name))
-                {{$student->district->name}}
+            @if(isset($student) && isset($student->pincode))
+                {{$student->pincode}}
               @else
                 NA
               @endif

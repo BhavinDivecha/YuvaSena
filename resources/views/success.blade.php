@@ -37,11 +37,6 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <br><br>
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#why">Why?</a></li>
-                    <br>
-                    <br>
                     @if (Auth::check())
                     <li class="nav-item"><a class="btn btn-primary w-100 mt-1 mt-md-0 ms-md-1" href="/logout">Logout</a></li> 
                     @endif

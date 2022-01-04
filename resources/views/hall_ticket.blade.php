@@ -25,7 +25,7 @@
           <img src="assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
         <a class="navbar-brand" href="/">
-          <img src="https://yuvaskill.com/uploads/system/6762c47d8938a9d95578ddba03262823.png" alt="" height="50" />
+          <img src="assets/img/yuva-skill-logo.png" alt="" height="50" />
         </a>
       </div>
     </nav>

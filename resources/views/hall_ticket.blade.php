@@ -24,9 +24,9 @@
         <a class="navbar-brand" href="/">
           <img src="assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
-        <a class="navbar-brand" href="/">
+        <!-- <a class="navbar-brand" href="/">
           <img src="assets/img/yuva-skill-logo.png" alt="" height="50" />
-        </a>
+        </a> -->
       </div>
     </nav>
     <table class="table table-bordered" >

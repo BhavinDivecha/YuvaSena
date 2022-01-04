@@ -94,7 +94,7 @@
               @endif
             </td>
           </tr>
-          <!-- <tr>
+          <tr>
             <td>
               Address
             </td>
@@ -132,7 +132,7 @@
                 NA
               @endif
             </td>
-          </tr> -->
+          </tr>
           <tr>
             <td>
               Center Name

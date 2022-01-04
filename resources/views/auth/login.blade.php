@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -72,6 +74,7 @@
                    type="password"
                    autocomplete="off" 
                    placeholder="Password" 
+                   class="form-control"
                    name="password" 
                    id="password"
                    required

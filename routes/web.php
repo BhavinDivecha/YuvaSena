@@ -37,7 +37,7 @@ Route::get('logout', 'Auth\LoginController@logout', function () {
 
 
 Route::group(['middleware' => ['web','auth']], function () {   	
-    Route::resource('admin/students', 'StudentController');
+    Route::resource('/students', 'StudentController');
     Route::get('/success','StudentController@hallTicketStudentLogin');
     Route::get('/admin', function () {
         return view('welcome');

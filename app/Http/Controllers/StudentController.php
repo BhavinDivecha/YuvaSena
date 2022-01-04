@@ -233,4 +233,13 @@ class StudentController extends Controller
             return view('welcome');
         }
     }
+    public function checkUser()
+    {
+        if(\Auth::user()->email == "admin@admin.com"){
+            return redirect('students');
+        }
+        else{
+            return redirect('success');
+        }
+    }
 }

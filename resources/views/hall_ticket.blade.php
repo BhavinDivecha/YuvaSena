@@ -24,15 +24,10 @@
         <a class="navbar-brand" href="">
           <img src="assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
-        <!-- <a class="navbar-brand" href="/">
-          <img src="assets/img/yuva-skill-logo.png" alt="" height="50" />
-        </a> -->
-      </div>
-      <div class="container">
-        
         <a class="navbar-brand" href="/">
           <img src="assets/img/yuva-skill-logo.png" alt="" height="50" />
         </a>
+        
       </div>
     </nav>
     <table class="table table-bordered" >

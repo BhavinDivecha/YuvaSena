@@ -45,6 +45,28 @@
           </tr>
           <tr>
             <td>
+              School Name
+            </td>
+            
+            <td>
+              {{$student->school_name}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              District
+            </td>
+            
+            <td>
+            @if(isset($student) && isset($student->district) && isset($student->district->name))
+                {{$student->district->name}}
+              @else
+                NA
+              @endif
+            </td>
+          </tr>
+          <tr>
+            <td>
               Center Name
             </td>
             
@@ -71,14 +93,13 @@
           </tr>
           <tr>
             <td>
-              Hall Ticket
+              Hall Ticket Number
             </td>
             
             <td>
               {{$student->hall_ticket_number}}
             </td>
           </tr>
-          
         </tbody>
 
       </table>

@@ -159,6 +159,7 @@
                     required
                     id="schoolName"
                     placeholder="School Name"
+                    name="school_name"
                     
                   />
                   <label for="schoolName">School Name</label>

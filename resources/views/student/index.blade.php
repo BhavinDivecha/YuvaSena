@@ -71,7 +71,7 @@
 
                 ajax: {
 
-                    url: '{{ url('admin/students') }}',
+                    url: '{{ url('/students') }}',
                     method: 'GET'
                 },
                 columns: [

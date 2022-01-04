@@ -24,6 +24,9 @@
         <a class="navbar-brand" href="/">
           <img src="assets/img/yuva-sena-logo.png" alt="" height="50" />
         </a>
+        <a class="navbar-brand" href="/">
+          <img src="https://yuvaskill.com/uploads/system/6762c47d8938a9d95578ddba03262823.png" alt="" height="50" />
+        </a>
       </div>
     </nav>
     <table class="table table-bordered" >
@@ -67,6 +70,71 @@
           </tr>
           <tr>
             <td>
+              Vidhansabha
+            </td>
+            
+            <td>
+            @if(isset($student) && isset($student->vidhansabha) && isset($student->vidhansabha->name))
+                {{$student->vidhansabha->name}}
+              @else
+                NA
+              @endif
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Taluka
+            </td>
+            
+            <td>
+            @if(isset($student) && isset($student->taluka) && isset($student->taluka->name))
+                {{$student->taluka->name}}
+              @else
+                NA
+              @endif
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Address
+            </td>
+            
+            <td>
+            @if(isset($student) && isset($student->address)))
+                {{$student->address}}
+              @else
+                NA
+              @endif
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pincode
+            </td>
+            
+            <td>
+            @if(isset($student) && isset($student->district) && isset($student->district->name))
+                {{$student->district->name}}
+              @else
+                NA
+              @endif
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Date of Birth
+            </td>
+            
+            <td>
+            @if(isset($student) && isset($student->date))
+                {{$student->date}}
+              @else
+                NA
+              @endif
+            </td>
+          </tr>
+          <tr>
+            <td>
               Center Name
             </td>
             
@@ -100,6 +168,7 @@
               {{$student->hall_ticket_number}}
             </td>
           </tr>
+          
         </tbody>
 
       </table>
